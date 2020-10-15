@@ -3,7 +3,7 @@
 console.log("I'm ready!");
 var hacker1 = "Nalu";
 console.log("The driver's name is",  hacker1 + ".")
-var hacker2 = "Angel";
+var hacker2 = "Zalu";
 console.log("The navigator's name is " + hacker2 + ".")
 
 
@@ -21,15 +21,19 @@ if(hacker1.length > hacker2.length) {
   }
 
 
-
-
 // Iteration 3: Loops
 
+var arr = [hacker1, hacker2];
 
-if (hacker1 > hacker2){
-  console.log("The driver's name goes first.");
-} else if (hacker1 < hacker2) {
-console.log("Yo, the navigator goes first definitely.")
+var sortArr = arr.sort();
+
+console.log(sortArr);
+
+if (sortArr[0] == sortArr[1]){
+  console.log("What?! You both have the same name?");
+} else if (sortArr[0] == hacker1) {
+console.log("The driver's name goes first.")
 } else {
-  console.log("What?! You both have the same name?")
+  console.log("Yo, the navigator goes first definitely.")
 }
+
